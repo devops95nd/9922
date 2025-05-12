@@ -93,7 +93,7 @@ def try_prepare_result(result) -> list[dict] | None:
 
 def generate_audit(source: str):
     response = client.messages.create(
-        model="claude-3-sonnet-20240229",
+        model="claude-3-7-sonnet-latest",
         max_tokens=4096,
         temperature=0,
         system=PROMPT,
