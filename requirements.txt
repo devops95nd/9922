@@ -17,6 +17,6 @@ unique-playgrounds-py==0.0.2
 solidity_audit_lib @ git+https://github.com/ReinforcedAIAudits/lib.git
 
 
-fastapi==0.110.1
-uvicorn==0.29.0
-anthropic==0.25.5
+fastapi==0.115.12
+uvicorn==0.34.2
+anthropic==0.51.0

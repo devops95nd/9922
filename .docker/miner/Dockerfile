@@ -10,9 +10,8 @@ WORKDIR /app
 COPY requirements.version.txt .
 COPY requirements.txt .
 
-RUN pip install setuptools --upgrade
-RUN pip install --no-cache-dir --upgrade pip \
- && pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir --upgrade pip && pip install setuptools --upgrade
+RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 RUN pip install --no-cache-dir -e .
